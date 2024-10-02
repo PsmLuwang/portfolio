@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Document</title>
+
+    <style>
+        body {
+            padding-inline: 20px;
+            background-color: rgb(248, 248, 248);
+            width: 100dvw;
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #34353A;
+            font-family: sans-serif;
+            color: white;
+            text-align: justify;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+        h4 {
+            color: #FFC907;
+        }
+        /* header {
+            background-color: red;
+        } */
+        article {
+            display: flex;
+            justify-content: space-around;
+        }
+        article > h3 > span {
+            color: #FFC907;
+        }
+        article > img {
+            height: 100px;
+        }
+
+        section > div {
+            display: flex;
+            align-items: center;
+        }
+        .about {
+            font-size: 0.9rem;
+        }
+        h5 {
+            margin: 5px;
+            width: 70px;
+        }
+        .range {
+            background-color: #289900;
+            height: 10px;
+            flex: 1;
+            border-radius: 5px;
+            display: flex;
+            justify-content: end;
+        }
+        .rangeHindi {
+            background-color: #D9D9D9;
+            height: 10px;
+            flex: 1;
+            border-radius: 5px;
+            display: flex;
+        }
+        .rangeHindi > div {
+            width: 65%;
+            height: 10px;
+            background-color: #289900;
+            border-radius: 5px;
+        }
+
+        .skillsContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 100px; */
+            /* gap: 10px; */
+            row-gap: 20px;
+            justify-items: center;
+        }
+        .skillIcon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .skillIcon > div {
+            position: relative;
+        }
+        .skillIcon > div > img {
+            border-radius: 20px;
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+        }
+        i {
+            color: #289900;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            font-size: 1.4rem;
+        }
+        .iconBG {
+            height: 15px;
+            width: 15px;
+            background-color: white;
+            position: absolute;
+            right: -2px;
+            top: -2px;
+            border-radius: 5px;
+        }
+        .underLearning {
+            background-color: red;
+            width: 90px;
+            text-align: center;
+            padding-block: 2px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            position: absolute;
+            right: -65px;
+            top: -7px;
+        }
+        b {
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Portfolio</h4>
+    </header>
+
+    <article>
+        <h3>
+            Nice to meet you ! <br>
+            I’m <span>Salam Priyansu Meitei,</span> <br>
+            a creative <span>Frontend Developer.</span>
+        </h3>
+        <img src="image/a3.jpg" alt="">
+    </article>
+
+    <section>
+        <h4>About :</h4>
+        <p class="about">
+            Coding is my passion. I started my journey with some references.  In the early stage I faced many obstacles and learn everything from my mistakes in hands-on practices. But now I have full confidence in Frontend Development after completed a course on frontend development. Currently I am looking for internship for experience.
+        </p>
+    </section>
+
+    <section>
+        <h4>Language :</h4>
+        <div>
+            <h5>English -</h5>
+            <div class="range"></div>
+        </div>
+        <div>
+            <h5>Hindi -</h5>
+            <div class="rangeHindi"><div></div></div>
+        </div>
+        <div>
+            <h5>Manipuri -</h5>
+            <div class="range"></div>
+        </div>
+    </section>
+
+    <section>
+        <h4>Skills :</h4>
+        <div class="skillsContainer">
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/html.png" alt="">
+                </div>
+                <b>HTML 5</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/css.jpg" alt="">
+                </div>
+                <b>CSS 3</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/js.png" alt="">
+                </div>
+                <b>JavaScript</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/git.png" alt="">
+                </div>
+                <b>Git</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/github.jpg" alt="">
+                </div>
+                <b>GitHub</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="iconBG"></div>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <img src="portfolio-img/figma.png" alt="">
+                </div>
+                <b>Figma</b>
+            </div>
+            <div class="skillIcon">
+                <div>
+                    <div class="underLearning">Under learning</div>
+                    <img src="portfolio-img/react.png" alt="">
+                </div>
+                <b>React JS</b>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h4>My Projects :</h4>
+    </section>
+</body>
+</html>

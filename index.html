@@ -8,6 +8,7 @@
 
     <style>
         body {
+            /* padding-inline: 20px; */
             background-color: rgb(248, 248, 248);
             width: 100dvw;
             max-width: 480px;
@@ -20,7 +21,7 @@
         header, article, section {
             padding-inline: 20px;
         }
-        h3 {
+        header > h4 {
             font-size: 1.2rem;
         }
         h4 {
@@ -32,6 +33,9 @@
         article {
             display: flex;
             justify-content: space-around;
+        }
+        h3 {
+            font-size: 1.1rem;
         }
         article > h3 > span {
             color: #FFC907;
@@ -95,7 +99,7 @@
             width: 60px;
             object-fit: cover;
         }
-        i {
+        .skillIcon > div > i {
             color: #289900;
             position: absolute;
             top: -5px;
@@ -127,8 +131,56 @@
             margin-top: 10px;
         }
 
+
+        footer {
+            padding-inline: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        footer > h4 {
+            border-bottom: 2px solid #FFC907;
+            width: 95%;
+            text-align: center;
+        }
+        footer > h4 > span {
+            position: relative;
+            top: 10px;
+            background-color: #34353A;
+            padding-inline: 20px;
+        }
+        footer > div {
+            width: 70%;
+            min-width: 300px;
+            display: flex;
+            border: 1px solid #FFC907;
+            border-radius: 2px;
+            height: 25px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        footer > div > div {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 30px;
+            background-color: #FFC907;
+            align-items: center;
+        }
+        footer > div > p {
+            margin: 0;
+            width: 81%;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        footer > div > div > i {
+            color: #34353A;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h4>Portfolio</h4>
@@ -140,7 +192,7 @@
             I’m <span>Salam Priyansu Meitei,</span> <br>
             a creative <span>Frontend Developer.</span>
         </h3>
-        <img src="a3.jpg" alt="">
+        <img src="image/a3.jpg" alt="">
     </article>
 
     <section>
@@ -230,5 +282,27 @@
     <section>
         <h4>My Projects :</h4>
     </section>
+
+    <footer>
+        <h4><span>Contact</span></h4>
+        <div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <p>spriyansumeitei@gmail.com</p>
+        </div>
+        <div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <p>+91-7005194248</p>
+        </div>
+        <div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p>Imphal, Manipur, India</p>
+        </div>
+    </footer>
 </body>
 </html>
